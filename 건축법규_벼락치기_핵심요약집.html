@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>건축설비기사 필기 — 건축법규 초단기 벼락치기 핵심 요약집</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+    font-size: 11px;
+    color: #1a1a2e;
+    background: #f8f9fa;
+    padding: 20px;
+  }
+  /* ── 표지 ── */
+  .cover {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    color: white;
+    text-align: center;
+    padding: 60px 40px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    page-break-after: always;
+  }
+  .cover .fire { font-size: 56px; margin-bottom: 16px; }
+  .cover h1 { font-size: 28px; font-weight: 900; letter-spacing: -0.5px; margin-bottom: 8px; }
+  .cover h2 { font-size: 16px; font-weight: 400; color: #e0e0e0; margin-bottom: 30px; }
+  .cover .badge {
+    display: inline-block;
+    background: #e94560;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 6px 18px;
+    border-radius: 20px;
+    margin: 4px;
+  }
+  .cover .meta { margin-top: 40px; font-size: 11px; color: #aaa; }
+
+  /* ── 섹션 헤더 ── */
+  .section-header {
+    border-radius: 8px;
+    padding: 12px 20px;
+    margin: 28px 0 12px 0;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    page-break-after: avoid;
+  }
+  .s1 { background: linear-gradient(90deg, #1a1a2e, #0f3460); }
+  .s2 { background: linear-gradient(90deg, #1b4332, #2d6a4f); }
+  .s3 { background: linear-gradient(90deg, #7b2d00, #c05c00); }
+  .s-final { background: linear-gradient(90deg, #6a0572, #a8009a); }
+
+  /* ── 표 ── */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 10.5px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+  }
+  thead tr { background: #f0f4ff; }
+  thead th {
+    padding: 8px 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 10px;
+    color: #444;
+    border-bottom: 2px solid #c9d4f0;
+    white-space: nowrap;
+  }
+  tbody tr:nth-child(even) { background: #f7f9ff; }
+  tbody tr:hover { background: #eef2ff; }
+  td {
+    padding: 7px 10px;
+    vertical-align: top;
+    border-bottom: 1px solid #e8ecf5;
+    line-height: 1.6;
+  }
+  td:first-child { font-weight: 700; color: #0f3460; white-space: nowrap; width: 1%; }
+  td:nth-child(2) { width: 24%; font-weight: 700; color: #1a1a2e; }
+  td:nth-child(3) { width: 38%; }
+  td:nth-child(4) { width: 15%; font-size: 10px; color: #555; }
+  td:nth-child(5) { width: 22%; font-size: 10px; }
+
+  /* ── 암기팁 ── */
+  .tip {
+    background: #fff8e1;
+    border-left: 3px solid #ffca28;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-weight: 700;
+    color: #5d4037;
+    font-size: 10px;
+    line-height: 1.5;
+  }
+  /* 정답 강조 */
+  strong { color: #c62828; }
+  em { color: #1565c0; font-style: normal; font-weight: 700; }
+
+  /* 최후 체크 테이블 */
+  .final-table { font-size: 11px; }
+  .final-table td:first-child { color: #6a0572; font-size: 10.5px; }
+  .final-table td:last-child { font-weight: 700; color: #c62828; }
+
+  /* 페이지 나눔 */
+  @media print {
+    body { background: white; padding: 0; font-size: 10px; }
+    .cover { page-break-after: always; }
+    .section-header { page-break-before: auto; }
+    table { page-break-inside: auto; }
+    tr { page-break-inside: avoid; }
+  }
+  @page { size: A4; margin: 15mm 12mm; }
+</style>
+</head>
+<body>
+<div class="cover">
+  <div class="fire">🔥</div>
+  <h1>건축설비기사 필기 — 건축법규<br>초단기 벼락치기 핵심 요약집</h1>
+  <h2>9개 기출 PDF 전체 분석 · 빈출 핵심 개념 완전 정리</h2>
+  <span class="badge">건축법·시행령</span>
+  <span class="badge">피난·방화</span>
+  <span class="badge">건축설비기준</span>
+  <span class="badge">주차장·소방·에너지</span>
+  <div class="meta">23년 1·2·4회 / 24년 1·2·3회 / 25년 1·2·3회 기출 기반 · 빈출/핵심 개념 엄선</div>
+</div>
+
+<div class="section-header s1">📘 1편 · 건축법·시행령 — 용어·면적·높이·대지·도로·구조</div>
+<table>
+  <thead><tr><th>#</th><th>핵심 개념</th><th>정답 핵심 문구 (반드시 외울 것)</th><th>한 줄 핵심 해설</th><th>🧠 암기 팁</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>배연창 유효면적</td><td>① <strong>1제곱미터 이상</strong><br>② 합계는 바닥면적의 <strong>100분의 1 이상</strong><br>③ <em>거실바닥면적 20분의1 이상 환기창</em> 거실면적은 산입 제외</td><td>1㎡/1%/1⁄20 세트가 핵심.</td><td><div class="tip">🧠 일일백+환제</div></td></tr>
+    <tr><td>2</td><td>배연창 위치기준</td><td>① 상변~천장 수직거리 <strong>0.9m 이내</strong><br>② 반자높이 3m 이상 시 하변 <strong>2.1m 이상</strong></td><td>상변/하변 기준을 분리 암기.</td><td><div class="tip">🧠 상0.9 하2.1</div></td></tr>
+    <tr><td>3</td><td>배연구 작동</td><td>① 감지기 연동 <strong>자동 개방</strong><br>② <strong>수동 개폐</strong> 가능<br>③ <strong>예비전원</strong>으로 개방</td><td>자동+수동+예비전원 반복 출제.</td><td><div class="tip">🧠 자수예</div></td></tr>
+    <tr><td>4</td><td>방송 공동수신설비 의무</td><td>① <strong>공동주택</strong><br>② 바닥면적 합계 <strong>5천㎡ 이상</strong> 업무·숙박</td><td>다가구주택은 공동주택 아님.</td><td><div class="tip">🧠 공동+5천업숙</div></td></tr>
+    <tr><td>5</td><td>헬리포트 크기</td><td>① 길이·너비 각 <strong>22m 이상</strong><br>② 옥상 길이·너비 22m 이하 시 <strong>15m까지 감축</strong></td><td>22 기본, 15 예외.</td><td><div class="tip">🧠 헬22·예15</div></td></tr>
+    <tr><td>6</td><td>헬리포트 안전반경·표지</td><td>① 중심 반경 <strong>12m</strong> 장애물 금지<br>② 한계선 너비 <strong>38cm</strong><br>③ 중앙표지 지름 <strong>8m</strong></td><td>12/38/8 수치 조합.</td><td><div class="tip">🧠 반12선38원8</div></td></tr>
+    <tr><td>7</td><td>건축신고 기준(소규모)</td><td>대표기준: <strong>연면적 200㎡ 미만 + 3층 미만</strong></td><td>허가/신고 구분 단골 숫자.</td><td><div class="tip">🧠 신고=200/3</div></td></tr>
+    <tr><td>8</td><td>공동주택+위락시설 분리</td><td>출입구 간 보행거리 <strong>30m 이상</strong></td><td>복합건축물 피난분리 기준.</td><td><div class="tip">🧠 공위30</div></td></tr>
+    <tr><td>9</td><td>아파트 정의</td><td>주택으로 쓰는 층수 <strong>5개 층 이상</strong></td><td>층수 수치 함정 빈출.</td><td><div class="tip">🧠 아파트=5층↑</div></td></tr>
+    <tr><td>10</td><td>다세대 정의</td><td>1개동 바닥면적 합계 <strong>660㎡ 이하</strong> + <strong>4개 층 이하</strong></td><td>660/4 세트 암기.</td><td><div class="tip">🧠 다660·4</div></td></tr>
+    <tr><td>11</td><td>기숙사 분류</td><td>기숙사는 <strong>공동주택</strong>에 속함</td><td>단독주택 선지에 섞어 함정 출제.</td><td><div class="tip">🧠 기숙=공동</div></td></tr>
+    <tr><td>12</td><td>단독주택 범위</td><td>공관·다중주택·다가구주택은 <strong>단독주택</strong> 계열</td><td>기숙사와 대비해서 기억.</td><td><div class="tip">🧠 공다다 단독</div></td></tr>
+    <tr><td>13</td><td>영업시설군 구성</td><td><strong>판매·운동·숙박·다중생활시설</strong></td><td>교육연구시설은 영업시설군 아님.</td><td><div class="tip">🧠 판운숙다</div></td></tr>
+    <tr><td>14</td><td>근생 함정</td><td><strong>일반음식점은 제2종 근생</strong><br>미용원·치과의원·마을회관은 제1종</td><td>1종/2종 교차 함정.</td><td><div class="tip">🧠 일반음식=2종</div></td></tr>
+    <tr><td>15</td><td>건축허가 설계도서(배치도)</td><td>대지 접도 길이·너비, <strong>주차동선·옥외주차계획</strong> 등 명시</td><td>도면항목형 문제 대비.</td><td><div class="tip">🧠 배치도=도로+주차</div></td></tr>
+    <tr><td>16</td><td>건축심의 트리거 숫자</td><td>자주 묻는 기준: <strong>15층 이상</strong>, <strong>연면적 10만㎡ 이상</strong></td><td>수치 트리거 선지 제거용.</td><td><div class="tip">🧠 15·10만</div></td></tr>
+    <tr><td>17</td><td>건축기준 허용오차</td><td>반자높이 <strong>2%</strong> 이내, 벽체두께 <strong>3%</strong> 이내</td><td>퍼센트형 수치문제 반복.</td><td><div class="tip">🧠 반2 벽3</div></td></tr>
+    <tr><td>18</td><td>지하층 정의</td><td>바닥~지표면 평균높이가 해당 층 높이의 <strong>2분의1 이상</strong></td><td>정의문장 빈칸 문제 대비.</td><td><div class="tip">🧠 지하=1/2</div></td></tr>
+    <tr><td>19</td><td>용도변경 판단 축</td><td>용도변경은 <strong>시설군 상·하위 이동</strong>으로 판단</td><td>용도명보다 시설군 체계가 우선.</td><td><div class="tip">🧠 용도보다 군</div></td></tr>
+    <tr><td>20</td><td>공동수신설비 문구 포인트</td><td>원칙은 설치 가능, 법정대상은 <strong>의무 설치</strong></td><td>가능/의무 구분 함정.</td><td><div class="tip">🧠 가능↔의무</div></td></tr>
+  </tbody>
+</table>
+<div class="section-header s2">🚪 2편 · 피난·방화·건축설비 기준 — 계단·복도·방화구획·배연·승강기·환기</div>
+<table>
+  <thead><tr><th>#</th><th>핵심 개념</th><th>정답 핵심 문구 (반드시 외울 것)</th><th>한 줄 핵심 해설</th><th>🧠 암기 팁</th></tr></thead>
+  <tbody>
+    <tr><td>21</td><td>피난안전구역 설치주기</td><td>초고층: 지상층부터 최대 <strong>30개 층마다 1개소 이상</strong></td><td>20/30/40 보기에서 30 고정.</td><td><div class="tip">🧠 초30층마다</div></td></tr>
+    <tr><td>22</td><td>피난안전구역 높이</td><td>높이 <strong>2.1m 이상</strong></td><td>1.8m 오답 선지 주의.</td><td><div class="tip">🧠 피안2.1</div></td></tr>
+    <tr><td>23</td><td>직통계단 기본 보행거리</td><td>거실 각 부분→계단 <strong>30m 이하</strong></td><td>기본값은 30m.</td><td><div class="tip">🧠 보30</div></td></tr>
+    <tr><td>24</td><td>보행거리 완화(내화구조)</td><td>완화 시 <strong>50m</strong>, 16층 이상 공동주택 해당층 <strong>40m</strong> 이하</td><td>50/40 같이 암기.</td><td><div class="tip">🧠 내50 고공40</div></td></tr>
+    <tr><td>25</td><td>공장 보행거리 완화</td><td>자동식 소화설비 공장 <strong>75m</strong>, 무인화 공장 <strong>100m</strong> 이하</td><td>75/100 쌍으로 출제.</td><td><div class="tip">🧠 공75 무100</div></td></tr>
+    <tr><td>26</td><td>1천㎡ 층 직통계단</td><td>바닥면적 <strong>1천㎡ 이상</strong> 층: 방화구획 각 부분마다 <strong>1개소 이상</strong></td><td>각 부분마다 문구 중요.</td><td><div class="tip">🧠 천㎡=구획마다1</div></td></tr>
+    <tr><td>27</td><td>다중이용업 층 기준</td><td>거실 바닥면적 합계 <strong>50㎡ 이상</strong>이면 직통계단 <strong>2개소 이상</strong></td><td>50/2 조합 단골.</td><td><div class="tip">🧠 50이면2계단</div></td></tr>
+    <tr><td>28</td><td>환기설비(층 기준)</td><td>거실 바닥면적 합계 <strong>1천㎡ 이상</strong> 층에는 환기설비 설치</td><td>피난·환기 연계문제 대비.</td><td><div class="tip">🧠 천㎡환기</div></td></tr>
+    <tr><td>29</td><td>지하층 급수전</td><td>지하층 바닥면적 <strong>300㎡ 이상</strong> 층에는 급수전 <strong>1개소 이상</strong></td><td>300㎡ 숫자 단답형.</td><td><div class="tip">🧠 지하300 급1</div></td></tr>
+    <tr><td>30</td><td>비상탈출구 기준</td><td>유효너비 <strong>0.75m 이상</strong>, 유효높이 <strong>1.5m 이상</strong>, 출입구와 <strong>3m 이상</strong></td><td>0.75/1.5/3 세트.</td><td><div class="tip">🧠 탈0.75·1.5·3</div></td></tr>
+    <tr><td>31</td><td>피난통로 너비</td><td>비상탈출구까지 피난통로 유효너비 <strong>0.75m 이상</strong></td><td>탈출구와 동일 수치.</td><td><div class="tip">🧠 통로0.75</div></td></tr>
+    <tr><td>32</td><td>회전문 이격거리</td><td>계단·에스컬레이터로부터 <strong>2m 이상</strong></td><td>1.5m 선지는 오답.</td><td><div class="tip">🧠 회전2m</div></td></tr>
+    <tr><td>33</td><td>회전문 틈새</td><td>문틀 사이 <strong>5cm 이상</strong>, 바닥 사이 <strong>3cm 이하</strong></td><td>이상/이하 방향 함정.</td><td><div class="tip">🧠 문5↑ 바3↓</div></td></tr>
+    <tr><td>34</td><td>회전문 치수·속도</td><td>날개 끝 길이 <strong>140cm 이상</strong>, 회전속도 <strong>분당 8회 이하</strong></td><td>140·8 묶음 암기.</td><td><div class="tip">🧠 140-8</div></td></tr>
+    <tr><td>35</td><td>비상용승강기 승강로</td><td>각 층~피난층 승강로는 <strong>단일구조</strong> 연결</td><td>분리구조 선지 주의.</td><td><div class="tip">🧠 비승 단일</div></td></tr>
+    <tr><td>36</td><td>비상용승강기 승강장 개구부</td><td>노대 또는 외부창/배연설비 설치</td><td>노대·외기개방 키워드 확인.</td><td><div class="tip">🧠 노외배</div></td></tr>
+    <tr><td>37</td><td>비상용승강기 면적</td><td>승강장 바닥면적은 1대당 <strong>6㎡ 이상</strong></td><td>숫자 단답형 반복.</td><td><div class="tip">🧠 비승6㎡</div></td></tr>
+    <tr><td>38</td><td>승용승강기 공통기준</td><td><strong>6층 이상 + 거실면적 3천㎡</strong>부터 대수 산정</td><td>기준점 먼저 잡고 계산.</td><td><div class="tip">🧠 6층3천</div></td></tr>
+    <tr><td>39</td><td>승용승강기(공연장군)</td><td>기본 <strong>2대</strong> + 3천㎡ 초과 <strong>2천㎡마다 1대</strong> 추가</td><td>기본2대군 암기.</td><td><div class="tip">🧠 공연집관 2+</div></td></tr>
+    <tr><td>40</td><td>승용승강기(업무·숙박 등)</td><td>기본 <strong>1대</strong> + 3천㎡ 초과 <strong>2천㎡마다 1대</strong></td><td>전시장·업무·숙박·위락 묶음.</td><td><div class="tip">🧠 전업숙위 1+</div></td></tr>
+  </tbody>
+</table>
+<div class="section-header s3">🅿️ 3편 · 주차장법 · 소방시설법 · 에너지절약기준</div>
+<table>
+  <thead><tr><th>#</th><th>핵심 개념</th><th>정답 핵심 문구 (반드시 외울 것)</th><th>한 줄 핵심 해설</th><th>🧠 암기 팁</th></tr></thead>
+  <tbody>
+    <tr><td>41</td><td>승용승강기(공동주택·교육연구)</td><td>기본 <strong>1대</strong> + 3천㎡ 초과 <strong>3천㎡마다 1대</strong></td><td>2천이 아니라 3천 주의.</td><td><div class="tip">🧠 공교노기 1+3천</div></td></tr>
+    <tr><td>42</td><td>복도 유효너비 핵심</td><td><strong>공동주택 1.2m</strong>, <strong>유치원·초등학교 1.8m</strong>, 경우에 따라 <strong>2.4m 이상</strong></td><td>1.2/1.8/2.4 세트.</td><td><div class="tip">🧠 공1.2 학1.8 특2.4</div></td></tr>
+    <tr><td>43</td><td>경계벽 대상</td><td>기숙사 침실·의료 병실·학교 교실·숙박 객실 간 경계벽</td><td>업무시설 사무실 간은 제외.</td><td><div class="tip">🧠 기의학숙만</div></td></tr>
+    <tr><td>44</td><td>방습 높이 기준</td><td>욕실·조리장 바닥부터 <strong>1m</strong>까지 안쪽벽은 내수재료</td><td>높이 1m 단답형.</td><td><div class="tip">🧠 방습1m</div></td></tr>
+    <tr><td>45</td><td>방습 대상 용도</td><td>1종근생(목욕장욕실·휴게음식점조리장), 2종근생(일반/휴게음식점 조리장), 숙박시설 욕실</td><td>아파트 욕실 선지 주의.</td><td><div class="tip">🧠 목휴·일휴·숙욕</div></td></tr>
+    <tr><td>46</td><td>피난계단 유효너비</td><td>계단 유효너비 <strong>0.9m 이상</strong></td><td>0.75와 혼동 주의.</td><td><div class="tip">🧠 계단0.9</div></td></tr>
+    <tr><td>47</td><td>굴뚝 옥상 돌출</td><td>상단 1m 이내 장애물 있으면 장애물보다 <strong>1m 이상 높게</strong></td><td>수평1m/수직+1m.</td><td><div class="tip">🧠 굴1m+1m</div></td></tr>
+    <tr><td>48</td><td>방화구조 재료기준</td><td>철망모르타르 바름두께 <strong>2cm 이상</strong>, 복합마감 합계 <strong>2.5cm 이상</strong></td><td>2.0/2.5 함정형.</td><td><div class="tip">🧠 방2·2.5</div></td></tr>
+    <tr><td>49</td><td>피뢰설비 설치기준</td><td>높이 <strong>20m 이상</strong> 건축물·공작물</td><td>31m 오답 선지 주의.</td><td><div class="tip">🧠 피뢰20</div></td></tr>
+    <tr><td>50</td><td>연결송수관설비 대상</td><td><strong>5층 이상</strong> + 연면적 <strong>6000㎡ 이상</strong></td><td>층수+연면적 동시충족.</td><td><div class="tip">🧠 연송5·6000</div></td></tr>
+    <tr><td>51</td><td>옥내소화전(연면적)</td><td>연면적 <strong>3천㎡ 이상</strong>(터널 제외) 등 대상은 설치</td><td>3천㎡ 숫자 고정.</td><td><div class="tip">🧠 옥내3천</div></td></tr>
+    <tr><td>52</td><td>옥내소화전(지하·무창층)</td><td>지하층·무창층 당해층 거실 <strong>150㎡ 이상</strong></td><td>지하/무창 별도기준.</td><td><div class="tip">🧠 지무150</div></td></tr>
+    <tr><td>53</td><td>옥내소화전(지하가·지하상가)</td><td>지하가(터널 제외)·지하상가 연면적 <strong>1천㎡ 이상</strong></td><td>1천㎡ 빈출.</td><td><div class="tip">🧠 지하가상1000</div></td></tr>
+    <tr><td>54</td><td>제연설비 대상</td><td>무창층 바닥면적 <strong>1천㎡ 이상</strong> 기준 빈출</td><td>무창층 숫자 고정암기.</td><td><div class="tip">🧠 무창1000=제연</div></td></tr>
+    <tr><td>55</td><td>공연장 개별관람실 출구수</td><td>관람실별 <strong>2개소 이상</strong></td><td>출구수 단답형 반복.</td><td><div class="tip">🧠 관람2출구</div></td></tr>
+    <tr><td>56</td><td>공연장 출구너비</td><td>각 출구 유효너비 <strong>1.5m 이상</strong></td><td>1.2/1.5 구분.</td><td><div class="tip">🧠 관출1.5</div></td></tr>
+    <tr><td>57</td><td>공연장 총 유효너비</td><td>바닥면적 <strong>100㎡마다 0.6m</strong> 이상</td><td>산식형 필수 암기.</td><td><div class="tip">🧠 100당0.6</div></td></tr>
+    <tr><td>58</td><td>에너지절약계획서 제출대상</td><td>연면적 합계 <strong>10만㎡ 이상</strong> 건축 등</td><td>10만㎡ 키워드.</td><td><div class="tip">🧠 에절 10만</div></td></tr>
+    <tr><td>59</td><td>단열계획 핵심</td><td>외벽 <strong>외단열</strong>, 열교부 단열재 <strong>연속설치</strong></td><td>내단열 오답 선지 주의.</td><td><div class="tip">🧠 외단열+열교차단</div></td></tr>
+    <tr><td>60</td><td>냉방설비 정의 구분</td><td><strong>빙축열=얼음</strong>, <strong>수축열=물냉각</strong>, <strong>잠열축열=상변화물질</strong></td><td>정의문장 그대로 출제.</td><td><div class="tip">🧠 빙얼음·수물·잠상</div></td></tr>
+  </tbody>
+</table>
+<div class="section-header s-final">✅ 시험 직전 최후의 10초 체크리스트</div>
+<table class="final-table">
+  <thead><tr><th>절대 헷갈리지 말 것</th><th>정 답</th></tr></thead>
+  <tbody>
+    <tr><td>배연창 숫자세트</td><td><strong>1㎡ + 1/100 + 상변0.9m</strong></td></tr>
+    <tr><td>배연창 하변 조건</td><td>반자높이 3m 이상이면 <strong>하변 2.1m 이상</strong></td></tr>
+    <tr><td>직통계단 보행거리</td><td><strong>기본30 / 완화50(공동16층↑은40) / 공장75(무인100)</strong></td></tr>
+    <tr><td>피난안전구역</td><td><strong>30개 층마다 1개소, 높이 2.1m 이상</strong></td></tr>
+    <tr><td>회전문 5수치</td><td><strong>2m·5cm·3cm·140cm·분당8회</strong></td></tr>
+    <tr><td>비상탈출구 3수치</td><td><strong>0.75m·1.5m·3m</strong></td></tr>
+    <tr><td>승강기 계산 시작점</td><td><strong>6층 이상 + 거실면적 3천㎡</strong></td></tr>
+    <tr><td>헬리포트 핵심</td><td><strong>22m(기본), 15m(예외), 반경12m 장애물 금지</strong></td></tr>
+    <tr><td>소방 연송 기준</td><td><strong>5층 이상 + 6000㎡ 이상</strong></td></tr>
+    <tr><td>피뢰설비</td><td><strong>20m 이상 건축물</strong></td></tr>
+  </tbody>
+</table>
+<p style="margin-top:14px; font-size:10px; color:#555; line-height:1.7;">이 요약집은 23~25년 9개 기출 해설의 법조문·수치 기준을 막판 암기용으로 압축했다. <strong>숫자(거리·면적·높이)</strong>를 먼저 외우고, <em>유형별로 묶어</em> 반복하면 실전에서 오답을 가장 크게 줄일 수 있다.</p>
+</body>
+</html>
