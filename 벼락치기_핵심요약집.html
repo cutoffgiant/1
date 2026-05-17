@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>건축설비기사 초단기 벼락치기 핵심 요약집</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+    font-size: 11px;
+    color: #1a1a2e;
+    background: #f8f9fa;
+    padding: 20px;
+  }
+  /* ── 표지 ── */
+  .cover {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    color: white;
+    text-align: center;
+    padding: 60px 40px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    page-break-after: always;
+  }
+  .cover .fire { font-size: 56px; margin-bottom: 16px; }
+  .cover h1 { font-size: 28px; font-weight: 900; letter-spacing: -0.5px; margin-bottom: 8px; }
+  .cover h2 { font-size: 16px; font-weight: 400; color: #e0e0e0; margin-bottom: 30px; }
+  .cover .badge {
+    display: inline-block;
+    background: #e94560;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 6px 18px;
+    border-radius: 20px;
+    margin: 4px;
+  }
+  .cover .meta { margin-top: 40px; font-size: 11px; color: #aaa; }
+
+  /* ── 섹션 헤더 ── */
+  .section-header {
+    border-radius: 8px;
+    padding: 12px 20px;
+    margin: 28px 0 12px 0;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    page-break-after: avoid;
+  }
+  .s1 { background: linear-gradient(90deg, #1a1a2e, #0f3460); }
+  .s2 { background: linear-gradient(90deg, #1b4332, #2d6a4f); }
+  .s3 { background: linear-gradient(90deg, #7b2d00, #c05c00); }
+  .s-final { background: linear-gradient(90deg, #6a0572, #a8009a); }
+
+  /* ── 표 ── */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 10.5px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+  }
+  thead tr { background: #f0f4ff; }
+  thead th {
+    padding: 8px 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 10px;
+    color: #444;
+    border-bottom: 2px solid #c9d4f0;
+    white-space: nowrap;
+  }
+  tbody tr:nth-child(even) { background: #f7f9ff; }
+  tbody tr:hover { background: #eef2ff; }
+  td {
+    padding: 7px 10px;
+    vertical-align: top;
+    border-bottom: 1px solid #e8ecf5;
+    line-height: 1.6;
+  }
+  td:first-child { font-weight: 700; color: #0f3460; white-space: nowrap; width: 1%; }
+  td:nth-child(2) { width: 24%; font-weight: 700; color: #1a1a2e; }
+  td:nth-child(3) { width: 38%; }
+  td:nth-child(4) { width: 15%; font-size: 10px; color: #555; }
+  td:nth-child(5) { width: 22%; font-size: 10px; }
+
+  /* ── 암기팁 ── */
+  .tip {
+    background: #fff8e1;
+    border-left: 3px solid #ffca28;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-weight: 700;
+    color: #5d4037;
+    font-size: 10px;
+    line-height: 1.5;
+  }
+  /* 정답 강조 */
+  strong { color: #c62828; }
+  em { color: #1565c0; font-style: normal; font-weight: 700; }
+
+  /* 최후 체크 테이블 */
+  .final-table { font-size: 11px; }
+  .final-table td:first-child { color: #6a0572; font-size: 10.5px; }
+  .final-table td:last-child { font-weight: 700; color: #c62828; }
+
+  /* 페이지 나눔 */
+  @media print {
+    body { background: white; padding: 0; font-size: 10px; }
+    .cover { page-break-after: always; }
+    .section-header { page-break-before: auto; }
+    table { page-break-inside: auto; }
+    tr { page-break-inside: avoid; }
+  }
+  @page { size: A4; margin: 15mm 12mm; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════ 표지 ═══════════════ -->
+<div class="cover">
+  <div class="fire">🔥</div>
+  <h1>건축설비기사 필기<br>초단기 벼락치기 핵심 요약집</h1>
+  <h2>9개 기출 PDF 전체 분석 · 빈출 67개 개념 완전 정리</h2>
+  <span class="badge">1과목 건축일반</span>
+  <span class="badge">2과목 위생설비</span>
+  <span class="badge">3과목 공기조화설비</span>
+  <div class="meta">23년 1·2·4회 / 24년 1·2·3회 / 25년 1·2·3회 기출 기반 · 2회 이상 중복 출제 개념만 엄선</div>
+</div>
+
+<!-- ═══════════════ 1과목 ═══════════════ -->
+<div class="section-header s1">📘 1과목 · 건축일반 — 열·결로·환기·채광·음향</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>핵심 개념</th>
+      <th>정답 핵심 문구 (반드시 외울 것)</th>
+      <th>한 줄 핵심 해설</th>
+      <th>🧠 암기 팁</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>열전달 3방식<br>(열관류·전도·대류·복사)</td>
+      <td>
+        ① 열관류 = 고체 사이에 두고 <strong>양쪽 유체</strong> 사이 열이동 (=열통과)<br>
+        ② 대류 = 고체-<strong>유체</strong> 사이<br>
+        ③ 전도 = <strong>고체 내부</strong> 고온→저온<br>
+        ④ 복사 = 공간 통해 전달
+      </td>
+      <td>"고체-유체 사이 = 열관류"는 함정. 정답은 <em>대류</em>.</td>
+      <td><div class="tip">🧠 관(통과)-유(체)대류-전(도)고체-복(사)빈공간<br>"관유전복"</div></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>결로 방지대책</td>
+      <td>
+        ① 실내 수증기 발생 억제<br>
+        ② 환기로 절대습도 저하<br>
+        ③ 단열 강화 → 실내 측 <strong>표면온도 ↑</strong><br>
+        ④ 방습층은 <strong>단열재의 고온 측(실내)</strong>에 설치<br>
+        ⑤ 냉교(Cold Bridge) 방지
+      </td>
+      <td>표면결로 = 표면온도 &lt; 노점온도일 때 발생.</td>
+      <td><div class="tip">🧠 "방습은 따뜻한 쪽(실내)<br>단열은 추운 쪽(실외)"<br>방-따 / 단-추</div></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>도시 열섬현상<br>(원인과 무관한 요소)</td>
+      <td>무관한 요소 = <strong>"큰 강이 도시를 끼고 흐른다"</strong></td>
+      <td>큰 강은 열을 분산 → 열섬 <em>감소</em>. 포장도로·고층빌딩·인공열이 원인.</td>
+      <td><div class="tip">🧠 "강(江)은 열의 적(敵)"<br>→ 열섬과 무관</div></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>유효온도 vs 작용온도</td>
+      <td>
+        · <em>유효온도</em> = 기온 + <strong>습도</strong> + 기류 (쾌적지표)<br>
+        · <em>작용온도</em> = 기온 + 기류 + <strong>복사열</strong> (생리지표)
+      </td>
+      <td>차이점 딱 하나: 유효=습도 포함, 작용=복사 포함.</td>
+      <td><div class="tip">🧠 "유<strong>습</strong> / 작<strong>복</strong>"<br>(유효=습도, 작용=복사)</div></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>잔향시간 정의</td>
+      <td>음원 정지 후 음압레벨이 <strong>60 dB 감쇠</strong>하는 데 걸리는 시간</td>
+      <td>Sabine식: R.T = 0.16·V/A</td>
+      <td><div class="tip">🧠 "육공(60)데시벨 될 때까지"</div></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Sabine 잔향식</td>
+      <td>
+        · 잔향시간 ∝ <strong>실용적 V</strong> (비례)<br>
+        · 잔향시간 ∝ 1/<strong>흡음력 A</strong> (반비례)<br>
+        · 비례상수 K = <strong>0.16</strong><br>
+        · 흡음재 위치와 <strong>무관</strong>
+      </td>
+      <td>"잔향시간이 흡음량에 비례 ❌" — 반비례가 정답.</td>
+      <td><div class="tip">🧠 "용적↑이면 길게,<br>흡음↑이면 짧게"</div></td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>건축음향 · 음 보강</td>
+      <td>반사음과 직접음의 시간차는 <strong>가능한 한 작게</strong> 해야 음 보강</td>
+      <td>시간차가 크면 반향(에코) 발생.</td>
+      <td><div class="tip">🧠 "음 보강 = 시간 작게"</div></td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>학교 교실 음환경</td>
+      <td>교실과 복도의 접촉면은 <strong>작게</strong> 해야 소음 차단</td>
+      <td>운동장은 배치계획으로 교실과 분리.</td>
+      <td><div class="tip">🧠 "복도와 멀수록 조용"</div></td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>마스킹 효과 · Sone</td>
+      <td>
+        · 마스킹 = 큰 소리에 작은 소리가 묻히는 현상<br>
+        · 인간 청각 감각의 음 크기 단위 = <strong>Sone(손)</strong>
+      </td>
+      <td>음의 크기(주관)=Sone / 음의 세기(객관)=dB.</td>
+      <td><div class="tip">🧠 "손(Sone)으로 느낀다"</div></td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>광속의 단위</td>
+      <td>광속 = <strong>lumen (루멘, lm)</strong></td>
+      <td>Candela=광도 / Lux=조도 / cd/m²=휘도</td>
+      <td><div class="tip">🧠 "광속은 루~멘하게 흐른다"</div></td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>정측광 채광</td>
+      <td>지붕면의 <strong>수직창</strong>을 통한 채광. 주광률 분포 균일 → <strong>전시·박물관 최적</strong></td>
+      <td>측창의 비막이 장점 + 천창의 균일성을 결합한 방식.</td>
+      <td><div class="tip">🧠 "정측 = 지붕에 선 측창"</div></td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>건축화 조명<br>(광천장 vs 루버조명)</td>
+      <td>
+        · <em>광천장</em> = 천장 전면에 광원 + <strong>반투명 확산판</strong>으로 가림<br>
+        · <em>루버조명</em> = 천장 전면에 <strong>루버</strong> + 뒤쪽 광원
+      </td>
+      <td>"광천장이 루버를 갖고 있다" → 함정. 그건 루버조명.</td>
+      <td><div class="tip">🧠 "광천장=우유빛,<br>루버=격자무늬"</div></td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>일사계획</td>
+      <td>
+        ① 침엽수보다 <strong>활엽수</strong>를 심는 것이 일사조절에 유리<br>
+        ② 겨울철 직달일사 최대 도입 → 난방부하 저감<br>
+        ③ <strong>남향</strong>이 난방기 일사에 유리
+      </td>
+      <td>활엽수: 여름엔 그늘, 겨울엔 낙엽 후 햇볕 통과.</td>
+      <td><div class="tip">🧠 "활(活)엽수 = 계절따라 일한다"</div></td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>환기방식 3종류<br>(★★★ 최빈출)</td>
+      <td>
+        · <em>1종(병용식)</em>: 급기+배기 → 병원 수술실, 거실, 지하극장<br>
+        · <em>2종(압입식)</em>: 급기만 → 무균실, 반도체, 식당, 창고<br>
+        · <em>3종(흡출식)</em>: 배기만 → 화장실, 욕실, 주방, 흡연실
+      </td>
+      <td>"3종에 수술실 적합 ❌" — 수술실은 <em>1종(또는 2종)</em>.</td>
+      <td><div class="tip">🧠 "청정실=압입(2종)<br>더러운 곳=흡출(3종)"<br>"1·2·3 = 둘다·들이·내보내"</div></td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>실내 공기오염<br>(무관한 요소)</td>
+      <td>오염과 무관한 요소 = <strong>"산소의 증가"</strong></td>
+      <td>CO₂·먼지·온도상승이 오염 원인. 산소 증가는 오히려 양호.</td>
+      <td><div class="tip">🧠 "산소는 좋은 친구"</div></td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>풍압계수의 의미</td>
+      <td>풍압계수 0.3 = 외부풍의 <strong>동압(動壓)의 30%</strong>가 풍압력으로 가해짐</td>
+      <td>동압이지 전압(全壓) 아님!</td>
+      <td><div class="tip">🧠 "움직임(動壓)의 %"</div></td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>자연환기 (연돌효과)</td>
+      <td>굴뚝효과(Stack Effect)는 <strong>겨울철에 더 활발</strong></td>
+      <td>실내외 온도차 클수록 강해짐. "여름철 더 활발 ❌"</td>
+      <td><div class="tip">🧠 "굴뚝은 겨울에 연기 잘 난다"</div></td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>공기환경 측정기기</td>
+      <td>피토관 = <strong>유속·풍량 측정</strong> (가스농도 측정 ❌)</td>
+      <td>가스농도는 가스분석계 사용.</td>
+      <td><div class="tip">🧠 "피토관 = 피(風)를 잰다"</div></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ═══════════════ 2과목 ═══════════════ -->
+<div class="section-header s2">🚰 2과목 · 위생설비 — 급수·급탕·배수·통기·펌프·수질</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>핵심 개념</th>
+      <th>정답 핵심 문구</th>
+      <th>한 줄 핵심 해설</th>
+      <th>🧠 암기 팁</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>19</td>
+      <td>급수방식 4종<br>(★★★ 최빈출)</td>
+      <td>
+        · <em>수도직결</em>: 단수 시 급수 ❌, 3층 이하, 압력 변동 있음, 수질 양호<br>
+        · <em>고가수조</em>: 압력 일정 (높이 비례), 수질 ↓<br>
+        · <em>압력수조</em>: 옥상 설치 불필요, 정전 시 소량 급수 가능(단, 지속 ❌)<br>
+        · <em>펌프직송</em>: 변속=회전수 제어 / 정속=대수 제어
+      </td>
+      <td>"압력수조 옥상 설치 부담 ❌" / "수도직결 고층 적합 ❌"</td>
+      <td><div class="tip">🧠 "수직(수도직결) = 단수에 직격탄"</div></td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>대변기 세정방식</td>
+      <td>
+        · <em>로탱크식</em>: 일반 가정용 표준<br>
+        · <em>하이탱크식</em>: 바닥에서 <strong>1.6 m 이상</strong> 높이 설치<br>
+        · <em>플러시밸브식</em>: 연속 사용 가능, <strong>7 mAq 이상 수압 필요</strong>, 가정용 ❌
+      </td>
+      <td>"플러시밸브가 수압 무관 ❌" → 일정 수압 반드시 필요.</td>
+      <td><div class="tip">🧠 "플러시는 힘(壓)이 있어야"</div></td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>먹는 물 수질기준<br>(수치 암기 필수)</td>
+      <td>
+        · 색도: <strong>5도</strong> 이하<br>
+        · 수은: <strong>0.001 mg/L</strong> 이하 ← 자릿수 함정!<br>
+        · 시안: <strong>0.01 mg/L</strong> 이하<br>
+        · 경도: <strong>300 mg/L</strong> 이하
+      </td>
+      <td>수은이 가장 엄격(소수점 셋째자리). "수은 0.01 ❌"</td>
+      <td><div class="tip">🧠 "수은=더 위험→0이 하나 더(0.001)"<br>"색5 · 시안1 · 경300"</div></td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>수질 오염지표</td>
+      <td>
+        · <em>DO</em> = <strong>용존산소량</strong> (높을수록 깨끗)<br>
+        · <em>BOD</em> = 생물화학적 산소요구량 (유기물 오염)<br>
+        · <em>COD</em> = 화학적 산소요구량 (COD > BOD)<br>
+        · <em>SS</em> = 부유물질 (탁도 원인)
+      </td>
+      <td>"DO=산소요구량 ❌" — DO는 <em>용존(溶存)산소량</em>.</td>
+      <td><div class="tip">🧠 "DO=Dissolved(녹아있는) Oxygen"</div></td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>무기·유기 오염물질</td>
+      <td>
+        · <em>무기물질</em>: 납, 불소, 수은, 비소<br>
+        · <em>유기물질</em>: <strong>페놀</strong>, 트리할로메탄
+      </td>
+      <td>"페놀이 무기물질 ❌"</td>
+      <td><div class="tip">🧠 "페놀=페트병처럼 유기"</div></td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>기구배수부하단위<br>(FU) 기준</td>
+      <td>기준 기구 = <strong>세면기</strong> (배수량 28.5 L/min = 1 FU)</td>
+      <td>모든 위생기구는 세면기 배수량의 배수로 환산.</td>
+      <td><div class="tip">🧠 "세면기 한 사발 = 1 FU"</div></td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>간접배수 대상 기구</td>
+      <td>
+        간접배수: 세탁기·냉각탑·식기세정기·제빙기<br>
+        <strong>세면기 = 직접배수</strong> (←함정!)
+      </td>
+      <td>간접배수=배수관과 공기층으로 역류 시 위생 보호.</td>
+      <td><div class="tip">🧠 "세면기는 직접,<br>음식·세탁 관련은 간접"</div></td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>통기관 5종 구분<br>(★★★ 최빈출)</td>
+      <td>
+        · <em>결합통기관</em>: 배수수직관과 통기수직관을 <strong>층마다 연결</strong> (수직관 길 때)<br>
+        · <em>각개통기관</em>: 위생기구 <strong>개별</strong><br>
+        · <em>루프(회로)통기관</em>: 여러 기구 <strong>묶음</strong><br>
+        · <em>신정통기관</em>: 배수수직관을 지붕 위까지 <strong>그대로 연장</strong><br>
+        · <em>도피통기관</em>: 배수횡지관 <strong>최하류</strong>에 설치
+      </td>
+      <td>결합통기관이 가장 자주 출제.</td>
+      <td><div class="tip">🧠 "결합=긴 수직관 짝꿍<br>도피=루프의 도우미"</div></td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>통기관 최소 관경</td>
+      <td>
+        · 각개통기 = 접속 배수관경의 <strong>1/2 이상</strong><br>
+        · 루프통기 = 작은쪽 관경의 <strong>1/2 이상</strong><br>
+        · 결합통기 = 작은쪽 관경 <strong>이상</strong><br>
+        · 도피통기 = 1/2 이상, 최소 <strong>32 mm</strong><br>
+        · <em>신정통기 = 배수수직관 관경보다 작으면 ❌</em>
+      </td>
+      <td>"신정통기가 배수수직관보다 작게 해도 됨 ❌"</td>
+      <td><div class="tip">🧠 "신정(정수리)은<br>머리만큼 굵게"</div></td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>트랩 봉수 파괴 원인</td>
+      <td>
+        ① 자기사이폰작용 ② 유도사이폰작용<br>③ 분출작용 ④ 모세관현상 ⑤ 증발<br>
+        <strong>수격작용은 봉수파괴 원인 ❌</strong>
+      </td>
+      <td>수격=압력파괴 현상, 봉수 직접 파괴와 무관.</td>
+      <td><div class="tip">🧠 "수격은 압력문제,<br>봉수파괴 X"</div></td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>자기사이폰 vs<br>유도사이폰</td>
+      <td>
+        · <em>자기사이폰</em>: <strong>같은</strong> 기구에서 만수 배수 시 자기 봉수 흡출<br>
+        · <em>유도사이폰</em>: <strong>다른</strong> 배수관 부압이 인접 기구 봉수 흡출
+      </td>
+      <td>만수배수→자기 / 다른 관 영향→유도.</td>
+      <td><div class="tip">🧠 "자기 죄(自己罪) = 본인 탓"</div></td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>포집기(트랩) 종류</td>
+      <td>
+        · 주방·식당 지방분 → <strong>그리스 포집기</strong><br>
+        · 주유소 → 오일 포집기<br>
+        · 정비소 → 가솔린 포집기<br>
+        · 치과·외과 → 플라스터 포집기
+      </td>
+      <td>그리스(Grease)는 동·식물성 기름.</td>
+      <td><div class="tip">🧠 "기름=그리스(Grease)"</div></td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>수격작용(워터해머)<br>방지법</td>
+      <td>
+        ① 수격방지기 설치<br>
+        ② 0.4 MPa 초과 시 감압밸브 설치<br>
+        ③ 배관 <strong>직선·짧게</strong>, 우회 최소화<br>
+        ④ 에어챔버·완충탱크 설치<br>
+        <strong>"수평주관 길이 증가" ❌ / "진공브레이커" ❌</strong>
+      </td>
+      <td>진공브레이커는 역류방지용.</td>
+      <td><div class="tip">🧠 "수격 = 짧고 곧게"</div></td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>밸브 용도 분류<br>(★★★ 최빈출)</td>
+      <td>
+        · <em>게이트밸브 = 슬루스밸브</em>: 단속용(ON/OFF), 마찰저항 ↓<br>
+        · <em>글로브밸브</em>: 유량 <strong>조절</strong>용<br>
+        · <em>앵글밸브</em>: 유량 조절 + 흐름 <strong>90° 전환</strong><br>
+        · <em>체크밸브</em>: 역류 방지
+      </td>
+      <td>"볼류트가 안내날개 = ❌" / "앵글=개폐용 ❌"</td>
+      <td><div class="tip">🧠 "게이트=문(門)개폐<br>글로브=지구(球)안 조절"</div></td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>배관 부속품<br>(교환·수리)</td>
+      <td>배관 일부 교환·수리 용이 = <strong>유니온 / 플랜지</strong></td>
+      <td>유니온=소구경 / 플랜지=대구경.</td>
+      <td><div class="tip">🧠 "U(니온)자로 풀고,<br>플랜지로 조인다"</div></td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>신축이음쇠 종류</td>
+      <td>
+        <strong>스위블형</strong> = 엘보 부위 회전으로 신축 흡수 (단골 출제)<br>
+        슬리브형·벨로즈형·루프형·볼조인트형
+      </td>
+      <td>급탕배관의 열팽창·수축 흡수용.</td>
+      <td><div class="tip">🧠 "스위블=빙글빙글 돌며 늘고 줄어"</div></td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>원심펌프 — 볼류트<br>vs 터빈</td>
+      <td>
+        · <em>터빈펌프</em>: 임펠러 바깥에 <strong>가이드 베인(안내날개)</strong> → 고양정<br>
+        · <em>볼류트펌프</em>: 안내날개 없음 → 저·중양정<br>
+        · <em>다단펌프</em>: 고양정용 (임펠러 여러 개)
+      </td>
+      <td>"볼류트가 안내날개로 고양정 ❌" — 그건 터빈펌프.</td>
+      <td><div class="tip">🧠 "터빈=날개(안내날개) 있어 멀리"</div></td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>펌프 상사법칙</td>
+      <td>
+        · 유량 Q ∝ N<sup>1</sup>·D<sup>3</sup><br>
+        · 양정 H ∝ N<sup>2</sup>·D<sup>2</sup><br>
+        · <strong>동력 L ∝ N<sup>3</sup>·D<sup>5</sup></strong>
+      </td>
+      <td>회전수 N, 직경 D. 동력=회전수 3제곱·직경 5제곱.</td>
+      <td><div class="tip">🧠 "풍-양-동 = 1-2-3<br>(회전수 지수)"</div></td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>캐비테이션 방지</td>
+      <td>흡수관은 <strong>짧고 굵게</strong>, 흡입양정 작게, 공기 체류 없게, 유속 ↓</td>
+      <td>"흡수관 길고 가늘게 ❌" (정반대)</td>
+      <td><div class="tip">🧠 "짧고 굵은 빨대로 빨아야"</div></td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>레이놀즈수<br>(층류·난류)</td>
+      <td>
+        · Re &lt; <strong>2100</strong> = 층류<br>
+        · 2100~4000 = 천이(임계)<br>
+        · Re &gt; <strong>4000</strong> = 난류
+      </td>
+      <td>층류-난류 판단 기준 = 레이놀즈수 (마하수·레이놀즈수 혼동 주의).</td>
+      <td><div class="tip">🧠 "2천1로 시작,<br>4천에서 난리(亂)"</div></td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>베르누이 정리</td>
+      <td>운동에너지 + 위치에너지 + 압력에너지 = <strong>일정</strong> (에너지 보존)</td>
+      <td>에너지 보존 법칙을 유체에 적용.</td>
+      <td><div class="tip">🧠 "운-위-압 = 항상 똑같이"</div></td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>급탕 — 동시사용률<br>높은 건물</td>
+      <td>
+        · 가열기 능력 = <strong>크게</strong><br>
+        · 저탕탱크 = <strong>소용량</strong><br>
+        · 최대부하 사용시간 = <strong>길다</strong>
+      </td>
+      <td>반대(간헐 사용)=저탕↑·가열↓.</td>
+      <td><div class="tip">🧠 "몰릴 땐 큰 가열기,<br>안 몰릴 땐 큰 탱크"</div></td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>급탕 안전장치<br>팽창관</td>
+      <td>
+        팽창관 도중에는 <strong>어떠한 밸브도 설치 ❌</strong><br>
+        팽창관 배수는 <strong>간접배수</strong>
+      </td>
+      <td>밸브 잠기면 압력 도피 못해 폭발 위험!</td>
+      <td><div class="tip">🧠 "팽창관에 밸브? 펑(爆)!"</div></td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>급탕배관 구배</td>
+      <td>급탕배관은 <strong>상향구배</strong> 원칙 (공기빠짐 원활)</td>
+      <td>공기가 상부에 모이면 순환 방해 → 공기빼기밸브 필요.</td>
+      <td><div class="tip">🧠 "뜨거운 건 위로(상향)"<br>급수=하향, 급탕=상향</div></td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>이종관 접합</td>
+      <td>강관 + 동관 접합 시 <strong>반드시 절연이음쇠</strong> 사용</td>
+      <td>이온화 경향 차이로 강관 부식. 절연 없으면 갈바닉 부식 발생.</td>
+      <td><div class="tip">🧠 "강·동(강약자) 만나면 절연(이혼)"</div></td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>크로스 커넥션</td>
+      <td>급수배관과 <strong>오수·유해배관</strong>이 잘못 연결되어 오염되는 현상 → 절대 금지</td>
+      <td>배관 오접속 문제. 유속 제한과는 무관.</td>
+      <td><div class="tip">🧠 "크로스(교차)=오염 십자가"</div></td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>유속·유량 공식</td>
+      <td>Q = A·V (유량=단면적×유속)</td>
+      <td>직경 200mm, 2400 L/min → 유속 <strong>1.27 m/s</strong> (단위환산 주의)</td>
+      <td><div class="tip">🧠 "Q(유량)는 면(A)에 속(V)도"</div></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ═══════════════ 3과목 ═══════════════ -->
+<div class="section-header s3">❄️ 3과목 · 공기조화설비 — 부하·난방·습공기·덕트·취출구</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>핵심 개념</th>
+      <th>정답 핵심 문구</th>
+      <th>한 줄 핵심 해설</th>
+      <th>🧠 암기 팁</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>46</td>
+      <td>냉방부하<br>현열·잠열 구분</td>
+      <td>
+        · <em>현열만</em>: 벽체·유리 취득열, 덕트열, 송풍기열, 조명<br>
+        · <em>현열+잠열</em>: <strong>인체, 틈새바람(외기), 환기</strong>
+      </td>
+      <td>"벽체에서 잠열 ❌" — 벽에는 습기 없음.</td>
+      <td><div class="tip">🧠 "사람·바람은 땀(잠열) 흘린다"</div></td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>유리창 일사부하<br>산정 요소</td>
+      <td>방위 + 유리면적 + <strong>차폐계수</strong></td>
+      <td><strong>열관류율은 일사부하 산정과 무관</strong> (전도·대류 부하 요소).</td>
+      <td><div class="tip">🧠 "일사=햇빛 직격<br>관류=온도차"</div></td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>구조체 축열부하</td>
+      <td>열용량이 클수록 시간지연(time-lag) → <strong>피크로드(최대냉방부하) 감소</strong></td>
+      <td>"열용량 크면 피크로드 증가 ❌"</td>
+      <td><div class="tip">🧠 "두꺼운 벽이 피크를 깎는다"</div></td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>보일러 출력 공식<br>(★★★ 최빈출)</td>
+      <td>
+        · 정미출력 = 난방 + 급탕<br>
+        · 상용출력 = 정미 + 배관<br>
+        · <strong>정격출력 = 상용 + 예열</strong> (= 난방+급탕+배관+예열)<br>
+        · 과부하출력 = 정격 × 1.1~1.2
+      </td>
+      <td>정격 ⊃ 상용 ⊃ 정미.</td>
+      <td><div class="tip">🧠 "정(미)-상(용)-정(격)-과(부하)"<br>= 정상정과 → 점점 커진다</div></td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>표준방열량 EDR<br>(★★★ 수치 암기)</td>
+      <td>
+        · <strong>증기난방 = 756 W/m²</strong><br>
+        · <strong>온수난방 = 523 W/m²</strong>
+      </td>
+      <td>EDR(상당방열면적) 산정의 기준값.</td>
+      <td><div class="tip">🧠 "증기=칠오육(756)<br>온수=오이삼(523)"<br>증기>온수 (숫자도 크다)</div></td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>온수난방 특징</td>
+      <td>
+        · 열용량 大 → 실내온도 상승 <strong>느림</strong>, 예열손실 <strong>큼</strong><br>
+        · 보일러 정지 후에도 <strong>잔열 지속</strong> → 연속난방 유리<br>
+        · <strong>간헐난방 ❌</strong>
+      </td>
+      <td>증기난방과 반대: 빠른 상승, 간헐 OK.</td>
+      <td><div class="tip">🧠 "온수=슬로우스타터,<br>오래간다"</div></td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td>증기난방 vs<br>고천장 공간</td>
+      <td>증기난방은 상하부 온도차 커서 <strong>극장·영화관 등 고천장 공간에 부적합</strong></td>
+      <td>"고천장에 증기난방 적합 ❌"</td>
+      <td><div class="tip">🧠 "증기는 위로만 올라가<br>머리만 뜨겁다"</div></td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>전공기방식 특징</td>
+      <td>
+        · 덕트 스페이스 <strong>필요</strong><br>
+        · 실내공기 오염 <strong>적음</strong><br>
+        · 누수 염려 <strong>적음</strong><br>
+        · <strong>외기냉방 가능</strong>
+      </td>
+      <td>"오염 심하다/누수 위험 크다 ❌"</td>
+      <td><div class="tip">🧠 "공기로만 가니<br>깨끗·건조·시원"</div></td>
+    </tr>
+    <tr>
+      <td>54</td>
+      <td>변풍량(VAV) 유닛</td>
+      <td>
+        · 바이패스형 = 정압변동 <strong>없음</strong><br>
+        · 교축형 = 정압변동 큼, 동력 절약<br>
+        · <strong>유인유닛형 = 2차 공기 유인, 집진효과 ❌</strong>
+      </td>
+      <td>"유인유닛이 집진 크다 ❌"</td>
+      <td><div class="tip">🧠 "유인유닛은 공기만 끌어와,<br>청소는 못해"</div></td>
+    </tr>
+    <tr>
+      <td>55</td>
+      <td>에어필터 효율<br>측정법 3종</td>
+      <td>
+        · <em>중량법</em> = 저성능 필터<br>
+        · <em>비색법(NBS)</em> = 중성능 필터<br>
+        · <em>DOP법(계수법)</em> = 고성능 HEPA 필터
+      </td>
+      <td>"체적법 ❌" (존재하지 않는 측정법)</td>
+      <td><div class="tip">🧠 "중-비-답(DOP)<br>저-중-고 성능"</div></td>
+    </tr>
+    <tr>
+      <td>56</td>
+      <td>증기트랩 분류<br>(★★★ 최빈출)</td>
+      <td>
+        · <em>기계식(부력)</em>: <strong>플로트트랩, 버킷트랩</strong><br>
+        · <em>온도조절식(열동식)</em>: 벨로즈, 바이메탈<br>
+        · <em>열역학식</em>: 디스크, 오리피스
+      </td>
+      <td>"플로트트랩이 온도조절식 ❌" — 플로트는 기계식(부력).</td>
+      <td><div class="tip">🧠 "플로트=뜨는 부력=기계식"</div></td>
+    </tr>
+    <tr>
+      <td>57</td>
+      <td>플로트트랩 특징</td>
+      <td>
+        · 다량 응축수 처리 OK<br>
+        · 응축수 연속배출 OK<br>
+        · <strong>동결 우려 장소 사용 ❌</strong>
+      </td>
+      <td>물이 차 있으니 얼면 작동 불가.</td>
+      <td><div class="tip">🧠 "플로트는 추위에 약하다"</div></td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td>취출구 종류</td>
+      <td>
+        · <em>노즐형</em>: 도달거리 김, <strong>저소음 → 방송국·음악감상실</strong><br>
+        · <em>아네모스탯형</em>: 천장형 확산<br>
+        · <em>팬형</em>: 확산 양호<br>
+        · <em>브리즈라인형</em>: 라인(줄)형
+      </td>
+      <td>노즐형 = 벽면 횡방향 취출.</td>
+      <td><div class="tip">🧠 "노즐=콘서트홀의 조용한 분사"</div></td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td>취출기류 4영역</td>
+      <td>
+        · 1영역: 취출풍속 유지<br>
+        · <strong>2영역: 천이구역</strong> (속도 ∝ 1/√거리)<br>
+        · 3영역: 속도 ∝ 1/거리<br>
+        · 4영역: 에너지 소모·확산
+      </td>
+      <td>2영역 = 천이구역. 단골 출제.</td>
+      <td><div class="tip">🧠 "2번째가 갈아타는 구간"</div></td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>습공기 — 가열 시<br>습도 변화</td>
+      <td>
+        · <strong>절대습도 = 불변</strong><br>
+        · <strong>상대습도 = 감소</strong><br>
+        · 등온 가습 시: 노점온도 ↑, 상대습도 ↑
+      </td>
+      <td>"가열하면 상대습도 증가 ❌"</td>
+      <td><div class="tip">🧠 "뜨거워지면 더 머금을 수 있어<br>→ 상대적으로 건조"</div></td>
+    </tr>
+    <tr>
+      <td>61</td>
+      <td>열수분비 · 현열비</td>
+      <td>
+        · <em>현열비(SHF)</em> = 현열 / <strong>전열(현+잠)</strong><br>
+        · <em>열수분비(u)</em> = <strong>엔탈피 변화량 / 절대습도 변화량</strong>
+      </td>
+      <td>열수분비는 선도에서 직접 못 읽음 (계산 필요).</td>
+      <td><div class="tip">🧠 "현열비=분자가 현열<br>열수분비=열÷수분"</div></td>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td>혼합공기 온도</td>
+      <td>T<sub>mix</sub> = (T₁·G₁ + T₂·G₂) / (G₁+G₂) — <strong>질량 가중평균</strong></td>
+      <td>예: 35℃ 30% + 26℃ 70% → <strong>28.7℃</strong></td>
+      <td><div class="tip">🧠 "질량 비율로 섞는다"</div></td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td>덕트 치수 — 등속법</td>
+      <td>
+        · 덕트 풍속을 <strong>일정하게 유지</strong>하도록 치수 결정<br>
+        · 미분탄·시멘트 분말 이송: <strong>20~35 m/s</strong> (침적 방지)
+      </td>
+      <td>"분말 이송에 5 m/s ❌" — 너무 느리면 가라앉음.</td>
+      <td><div class="tip">🧠 "가루는 빨리 보내야 안 쌓인다"</div></td>
+    </tr>
+    <tr>
+      <td>64</td>
+      <td>장방형↔원형 덕트<br>환산식</td>
+      <td>d = 1.3 × [(a·b)<sup>5</sup> / (a+b)<sup>2</sup>]<sup>1/8</sup></td>
+      <td>a=장변, b=단변. 공식 형태만 기억하면 OK.</td>
+      <td><div class="tip">🧠 "1.3배 × (5분의 8제곱)"</div></td>
+    </tr>
+    <tr>
+      <td>65</td>
+      <td>희석환기 (전체환기)</td>
+      <td>열·유해물질이 실내 <strong>전역</strong>에 분포 시 외기로 농도 희석 = General Ventilation</td>
+      <td>국소환기: 발생원 국소에 집중 배기.</td>
+      <td><div class="tip">🧠 "전부 묻으면 전부 씻는다"</div></td>
+    </tr>
+    <tr>
+      <td>66</td>
+      <td>열펌프 (Heat Pump)</td>
+      <td>
+        · 냉방/난방 <strong>모두 가능</strong><br>
+        · 응축기 방열량을 난방에 이용<br>
+        · 난방 COP > 냉방 COP<br>
+        · <strong>EHP = 전기 증기압축식</strong> (흡수식 ❌)
+      </td>
+      <td>"EHP=흡수식 ❌" 단골 함정.</td>
+      <td><div class="tip">🧠 "E(lectric)=전기로 압축"</div></td>
+    </tr>
+    <tr>
+      <td>67</td>
+      <td>공기조화기<br>코일 통과 상태</td>
+      <td>
+        냉각코일 통과 시: 온도 ↓, 절대습도 ↓, 상대습도 ↑<br>
+        가열코일 통과 시: 온도 ↑, 절대습도 불변, 상대습도 ↓
+      </td>
+      <td>냉각 = 냉각+제습 동시 / 가열 = 건조효과.</td>
+      <td><div class="tip">🧠 "냉각=차가워지며 물 짜내기"</div></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ═══════════════ 최후 체크 ═══════════════ -->
+<div class="section-header s-final">✅ 시험 직전 최후의 10초 체크리스트 — 절대 헷갈리지 말 것!</div>
+
+<table class="final-table">
+  <thead>
+    <tr>
+      <th style="width:45%">절대 헷갈리지 말 것</th>
+      <th style="width:55%">정 답</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>유효온도 ↔ 작용온도 구별</td><td><strong>유</strong>효=<strong>습</strong>도 포함 / <strong>작</strong>용=<strong>복</strong>사 포함 (유습/작복)</td></tr>
+    <tr><td>환기방식 1·2·3종</td><td>1=수술실(급기+배기) / 2=무균실(급기만) / 3=화장실(배기만)</td></tr>
+    <tr><td>표준 방열량 수치</td><td>증기 <strong>756 W/m²</strong> / 온수 <strong>523 W/m²</strong></td></tr>
+    <tr><td>보일러 출력 순서</td><td>정미 &lt; 상용 &lt; 정격 &lt; 과부하 (정상정과)</td></tr>
+    <tr><td>신정통기관 관경</td><td>배수수직관 관경 <strong>이상</strong> (작으면 절대 ❌)</td></tr>
+    <tr><td>봉수파괴 원인에서 제외</td><td>수격작용은 봉수파괴 <strong>원인 아님</strong></td></tr>
+    <tr><td>그리스포집기 설치 장소</td><td>주방·식당의 <strong>지방분</strong> 제거</td></tr>
+    <tr><td>가열 시 습도 변화</td><td>절대습도 <strong>불변</strong> / 상대습도 <strong>감소</strong></td></tr>
+    <tr><td>EHP(전기 열펌프) 원리</td><td><strong>전기 증기압축식</strong> (흡수식 ❌)</td></tr>
+    <tr><td>먹는 물 수은 기준</td><td><strong>0.001 mg/L</strong> (다른 항목과 자릿수 다름!)</td></tr>
+  </tbody>
+</table>
+
+<p style="text-align:center; margin-top:30px; font-size:12px; color:#777; font-weight:700;">
+  🍀 위 67개 개념 + 10개 체크리스트만 완벽히 외우면 합격선 안정 확보!<br>
+  23년~25년 기출 9회 분석 기반 · 빈출 2회 이상 개념만 엄선
+</p>
+
+</body>
+</html>
